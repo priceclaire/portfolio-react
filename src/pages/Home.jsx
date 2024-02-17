@@ -1,8 +1,16 @@
 import React from 'react';
+import Hero from '../components/Hero/Hero';
+import Card from '../components/Card/Card';
 
 
 function Home() {
-    return <h1>home</h1>
+    return (
+        <>
+        <Hero />
+        <Card />
+        </>
+    )
+    
 }
 
 export default Home;
