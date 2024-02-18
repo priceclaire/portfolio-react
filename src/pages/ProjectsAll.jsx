@@ -1,32 +1,21 @@
-import React from 'react';
-import data from '../assets/project-data.json';
-import CardProjects from '../components/CardProjects/CardProjects';
+import React, { useState, useEffect } from 'react';
+import MainProjects from '../components/MainProjects/MainProjects';
 
+function ProjectsAll() {
+   const [jsonData, setJsonData] = useState([]);
 
-
-// Parent
-
-// class Project1 extends Component {
-//     render() {
-//         const title = data.projects.title;
-
-//         return (
-//             <div>
-//                 <h1>{title}</h1>
-//             </div>
-//         );
-//     }
-// }
-
-function Projects() {
-    const title = data.projects.title;
+   useEffect(() => {
+    fetch('/project-data.json')
+    .then((response) => response.json())
+    .then((data) => setJsonData(data))
+    .catch((error) => console.error('Error fetching data: ', error));
+   }, []);
 
     return (
         <div>
-            <h1>{title}</h1>
+           <MainProjects jsonData={jsonData} />
         </div>
     );
-
 }
 
-export default Project;
+export default ProjectsAll;

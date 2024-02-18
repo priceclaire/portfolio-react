@@ -1,5 +1,4 @@
-{
-    "projects": [
+[
         {
             "ID": "1",
             "title": "Weather Dashboard",
@@ -43,4 +42,3 @@
             "image": ""
         }
     ]
-}
