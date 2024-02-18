@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CardProjects({ data }) {
     return (
         <div>
             <img scr={data.image} />
-            <h5>{data.title}</h5>
+            <Link to="/Detail"><h5>{data.title}</h5></Link>
             <a href={data.linkDeployed} target="_blank" rel="noreferrer noopener">Deployed application</a>
             <a href={data.linkRepo} target="_blank" rel="noreferrer noopener">GitHub repository</a>
         </div>
