@@ -1,5 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import data from '../assets/project-data.json';
+import CardProjects from '../components/CardProjects/CardProjects';
+
 
 
 // Parent
@@ -16,7 +18,7 @@ import data from '../assets/project-data.json';
 //     }
 // }
 
-function Pro() {
+function Projects() {
     const title = data.projects.title;
 
     return (

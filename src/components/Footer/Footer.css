@@ -1,0 +1,17 @@
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    padding: 30px;
+}
+
+.footer-wrapper img {
+    height: 40px;
+}
+

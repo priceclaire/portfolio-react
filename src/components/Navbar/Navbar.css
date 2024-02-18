@@ -1,0 +1,25 @@
+
+
+nav {
+    background-color: grey;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+nav ul h1 {
+    color: black;
+    
+    
+}
+
+
+
+
+
