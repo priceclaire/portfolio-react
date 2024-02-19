@@ -1,6 +1,6 @@
 import React from 'react';
-import Hero from '../components/Hero/Hero';
-import Card from '../components/Card/Card';
+import Hero from '../components/Hero';
+import Card from '../components/Card';
 
 
 function Home() {

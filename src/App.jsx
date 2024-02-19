@@ -5,8 +5,8 @@ import  Home from './pages/Home';
 import  ProjectsAll from './pages/ProjectsAll';
 import  ProjectChoice from './pages/ProjectChoice';
 import  Contact from './pages/Contact';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 // import Wrapper from './components/Wrapper';
 

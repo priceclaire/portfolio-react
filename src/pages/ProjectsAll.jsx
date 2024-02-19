@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import MainProjects from '../components/MainProjects/MainProjects';
+import JsonContainer from '../components/JsonContainer';
 
 function ProjectsAll() {
    const [jsonData, setJsonData] = useState([]);
@@ -13,7 +13,7 @@ function ProjectsAll() {
 
     return (
         <div>
-           <MainProjects jsonData={jsonData} />
+           <JsonContainer jsonData={jsonData} />
         </div>
     );
 }

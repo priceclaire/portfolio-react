@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import JsonContainer from '../components/JsonContainer';
 
 function ProjectChoice() {
+   const [jsonData, setJsonData] = useState([]);
+
+   useEffect(() => {
+    fetch('/project-data.json')
+    .then((response) => response.json())
+    .then((data) => setJsonData(data))
+    .catch((error) => console.error('Error fetching data: ', error));
+   }, []);
+
     return (
         <div>
-        <h1>Project test</h1>
+           <JsonContainer jsonData={jsonData} />
         </div>
     );
 }
