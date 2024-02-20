@@ -1,12 +1,12 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import  Home from './pages/Home';
-import  ProjectsAll from './pages/ProjectsAll';
-import  ProjectChoice from './pages/ProjectChoice';
-import  Contact from './pages/Contact';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import  Home from './src/pages/Home';
+import  ProjectsAll from './src/pages/ProjectsAll';
+import  ProjectChoice from './src/pages/ProjectChoice';
+import  Contact from './src/pages/Contact';
+import Header from './src/components/Header';
+import Footer from './src/components/Footer';
 
 // import Wrapper from './components/Wrapper';
 
